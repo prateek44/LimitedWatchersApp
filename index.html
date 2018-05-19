@@ -1,0 +1,24 @@
+<html ng-app="StandardApp">
+<head>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="StandardAppController">
+  <div>
+    <div>
+      {{firstName}}
+    </div>
+    <div>
+      <button type="text" ng-click="setFullName();">FullName</button><br>
+      <div>
+        {{:: fullName}}
+      </div>
+    </div>
+    <div>
+      <button type="text" ng-click="updateFullName();">updated FullName</button><br>
+      {{:: fullName}}
+    </div>
+  </div>
+
+</body>
+</html>
